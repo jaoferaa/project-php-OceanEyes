@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #e6f5ff;
+    overflow: auto;
+    overflow-x: hidden;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,#FBF2EB,#6FC4CA,#E9FCFA);
+    font-family:Poppins,sans-serif;
+    min-height: 100vh;
+}
+.brand{
+    background: #1ab2ff;
+    color: #cceeff;
+    padding: 10px;
+    box-shadow: 10px 10px #99ddff;
+    cursor: pointer;
+    font-family: Poppins Regular,sans-serif;
+}
+h3{
+    position: relative;
+    left: 0;
+    transition: 0.6s;
+}
+ul{
+    position: relative;
+    background:rgba(0, 0, 0, 0.206);
+    display: inline-flex;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+    top: 15px;
+    list-style: none;
+}
+.Lnks a{
+    font-family: Poppins,sans-serif;
+    padding: 18px;
+    margin: 10px;
+    color: black;
+}
+.active a{
+    margin: 0;
+    transition: 0.6s ease;
+    box-shadow: 5px 5px #e6f5ff;
+    background-color:#99ddff ;
+    border-radius: 6px;
+}
+.Lnks a:hover{
+    color: black;
+}
+.box{
+    margin: 4% auto;
+    border: 1px solid rgba(78, 115, 161, 0.186);
+    border-radius: 6px;
+    text-align: center;
+    padding: 40px;
+    width: 40%;
+    box-shadow:0 0 10px rgba(0,0,0, 0.2);
+    background: #e6f5ff;
+    
+}
+.box input:focus{
+    border: 1px solid #1ab3ffc5;
+}
+.box input{
+    width: 100%;
+    padding: 8px;
+    margin: 15px 0;
+    border: 1px solid rgba(0, 0, 0, 0.069);
+    border-radius: 5px;
+    outline:none;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.115);
+    font-family: sans-serif;
+    font-size: 14px;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+
+}
+.box input:invalid{
+    animation: shake 300ms;
+    color: red;
+    font-weight: bold;
+}
+@keyframes shake{
+    25%{
+        transform: translateX(4px);
+    }
+    50%{
+        transform: translateX(-4px);
+    }
+    75%{
+        transform: translateX(4px);
+    }
+}
+.signup{
+    text-align: center;
+
+}
+.signup a{
+    color: rgba(0, 0, 0, 0.448);
+}
+.signup a:hover{
+    transition: 0.2s ease;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.386);
+    text-decoration: none;
+}
+input[type="checkbox"] {
+        display: inline-block;
+        width: auto;
+}
+.design-content{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.design{
+    width: 40%;
+    height: 40%;
+    border-radius: 5px;
+}
+.box-welcome{
+    background-color: #e6f5ff;
+    width: 25%;
+    height: 20rem;
+    margin: 10% auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.boxs .welcome{
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 100px 0;
+    width: 100%;
+}
+.boxs .enter{
+    height: 50px;
+    width: 100%;
+    border: 1px solid #80FFFF;
+    background-color: #00E6E6;
+    border-radius: 6px;
+}
+.boxs .a-enter{
+    font-family: sans-serif;
+    color: #ffff;
+    font-weight: 900;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+.message{
+    text-align: center;
+    margin: 0 auto;
+}
+.message p{
+    font-size: 15px;
+}
+.profile img{
+    width: 180px;
+    padding: 10px;
+    margin: 0 0 0 20px;
+}
+.nameuser{
+    text-indent: 45px;
+    color: rgba(6, 6, 6, 0.369);
+    border: 1px solid rgba(0, 0, 0, 0.151);
+}
+.hm{
+   color: rgba(13, 13, 13, 0.563);
+}
+
+/* CAROUSEL */
+#my_slider .carousel-control-prev:hover,
+#my_slider .carousel-control-next:hover,
+#my_slider .carousel-control-prev:focus,
+#my_slider .carousel-control-next:focus {
+    background-color: #94b8b8;
+    color: #94b8b8;
+}
+
+#my_slider a.carousel-control-next {
+    position: absolute;
+    left: 550px;
+    top: 105%;
+    color: #252525;
+    background-color: #252525;
+}
+
+#my_slider a.carousel-control-prev {
+    position: absolute;
+    left: 500px;
+    top: 105%;
+    color: #252525;
+    background-color: #252525;
+}
+
+#my_slider .carousel-control-prev,
+#my_slider .carousel-control-next {
+    width: 30px;
+    height: 30px;
+    background-color: #252525;
+    border-radius: 100%;
+    opacity: 1;
+    
+}
+/* FIN CAROUSEL */
+.size{
+    width: 45%;
+    height: 45%;
+    border-radius: 5px;
+}
+video{
+    max-width: 100%;
+    height: auto;
+}
